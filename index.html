@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ensiklopedia mini tentang berbagai jenis ular, ciri-ciri, habitat, dan fakta menarik.">
+<title>Dunia Ular | Mengenal Berbagai Jenis Ular</title>
+<style>
+:root{--bg:#f4f7f1;--ink:#1d3027;--green:#244b38;--lime:#c6df8b;--muted:#62736a;--card:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+header{background:linear-gradient(120deg,rgba(13,43,31,.94),rgba(36,75,56,.86)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Ophiophagus_hannah.jpg?width=1800') center/cover;color:white;padding:22px 7% 82px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.brand{font-size:1.25rem;font-weight:800;letter-spacing:.5px}.brand span{color:var(--lime)}nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:600;font-size:.95rem}
+.hero{max-width:760px;margin:76px 0 0}.eyebrow{text-transform:uppercase;letter-spacing:3px;color:var(--lime);font-size:.78rem;font-weight:700}.hero h1{font-size:clamp(2.4rem,6vw,4.7rem);line-height:1.05;margin:12px 0 18px}.hero p{font-size:1.1rem;color:#e2eee6;max-width:620px}.hero a{display:inline-block;margin-top:18px;background:var(--lime);color:#1d3027;text-decoration:none;padding:12px 22px;border-radius:30px;font-weight:800}
+main{max-width:1180px;margin:auto;padding:55px 22px}.intro{text-align:center;max-width:760px;margin:0 auto 35px}.intro h2{font-size:2rem;margin-bottom:8px}.intro p,.muted{color:var(--muted)}
+.toolbar{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin:25px 0}.search{flex:1;min-width:220px;padding:13px 16px;border:1px solid #d4dfd5;border-radius:12px;font-size:1rem;background:white}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid #cbd8cd;background:white;color:var(--green);padding:10px 14px;border-radius:22px;cursor:pointer;font-weight:700}.filter.active,.filter:hover{background:var(--green);color:white}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.snake-card{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 8px 25px rgba(30,60,40,.08);transition:.2s}.snake-card:hover{transform:translateY(-5px)}.snake-card img{width:100%;height:220px;object-fit:cover;object-position:center;background:#dce6dc;display:block}.content{padding:19px}.tag{display:inline-block;background:#edf4e4;color:#3e633d;border-radius:20px;padding:4px 10px;font-size:.75rem;font-weight:800}.content h3{margin:10px 0 5px;font-size:1.35rem}.content p{margin:6px 0;color:var(--muted);font-size:.94rem}.facts{border-top:1px solid #edf0eb;margin-top:14px;padding-top:12px;font-size:.88rem}.facts b{color:var(--ink)}
+.note{margin:45px 0;background:#e8f0df;border-left:5px solid #6b914d;padding:20px 22px;border-radius:10px}.note h3{margin:0 0 7px}.safety{background:#183d2c;color:#fff;border-radius:20px;padding:30px;margin-top:45px}.safety h2{margin-top:0}.safety p{color:#e0ebe2}.safety strong{color:var(--lime)}
+footer{text-align:center;padding:28px;background:#102b20;color:#dbe8dd;font-size:.9rem}footer a{color:var(--lime)}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:570px){header{padding:18px 6% 65px}nav a{margin:0 12px 0 0}.hero{margin-top:55px}.grid{grid-template-columns:1fr}.snake-card img{height:235px}main{padding:42px 16px}}
+</style>
+</head>
+<body>
+<header id="beranda">
+  <nav><div class="brand">DUNIA<span>ULAR</span></div><div><a href="#jenis">Jenis Ular</a><a href="#fakta">Fakta</a><a href="#keamanan">Keamanan</a></div></nav>
+  <section class="hero">
+    <div class="eyebrow">Ensiklopedia alam</div>
+    <h1>Mengenal Dunia Ular</h1>
+    <p>Jelajahi berbagai jenis ular dari seluruh dunia, kenali ciri-ciri, habitat, dan keunikannya. Belajar tentang ular membantu kita memahami perannya dalam keseimbangan alam.</p>
+    <a href="#jenis">Jelajahi Jenis Ular ↓</a>
+  </section>
+</header>
+<main>
+  <section class="intro" id="jenis">
+    <div class="eyebrow" style="color:#64804b">Kenali lebih dekat</div>
+    <h2>Berbagai Jenis Ular</h2>
+    <p>Berikut contoh ular yang terkenal dari berbagai habitat. Foto ditampilkan dari Wikimedia Commons dan memerlukan koneksi internet.</p>
+  </section>
+  <div class="toolbar">
+    <input class="search" id="search" type="search" placeholder="Cari nama ular atau habitat..." aria-label="Cari jenis ular">
+    <div class="filters">
+      <button class="filter active" data-filter="semua">Semua</button>
+      <button class="filter" data-filter="berbisa">Berbisa</button>
+      <button class="filter" data-filter="tidak berbisa">Tidak berbisa</button>
+    </div>
+  </div>
+  <section class="grid" id="snakeGrid">
+    <article class="snake-card" data-kind="berbisa">
+      <img loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/KingCobra_OphiophagusHannah.jpg/960px-KingCobra_OphiophagusHannah.jpg" alt="Foto kepala ular King Cobra (Ophiophagus hannah)" onerror="this.onerror=null;this.src='https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Ophiophagus_hannah.jpg/960px-Ophiophagus_hannah.jpg'">
+      <div class="content"><span class="tag">Berbisa</span><h3>King Cobra</h3><p>Ular berbisa terpanjang di dunia. Dapat mengembangkan tudung leher saat merasa terancam.</p><div class="facts"><b>Nama ilmiah:</b> <i>Ophiophagus hannah</i><br><b>Habitat:</b> Hutan dan kawasan bervegetasi di Asia Selatan serta Asia Tenggara.</div></div>
+    </article>
+    <article class="snake-card" data-kind="berbisa">
+      <img loading="lazy" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Indian_cobra.jpg/960px-Indian_cobra.jpg" alt="Foto ular Kobra India dengan tudung mengembang (Naja naja)" onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Cobra_hood.jpg'">
+      <div class="content"><span class="tag">Berbisa</span><h3>Kobra India</h3><p>Dikenal dengan tudung khas di belakang kepala. Pola pada tudung dapat berbeda-beda.</p><div class="facts"><b>Nama ilmiah:</b> <i>Naja naja</i><br><b>Habitat:</b> Asia Selatan, termasuk padang rumput dan area pertanian.</div></div>
+    </article>
+    <article class="snake-card" data-kind="berbisa">
+      <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Russell%27s-Viper-India.jpg" alt="Foto ular Russell’s Viper (Daboia russelii)" onerror="this.onerror=null;this.src='https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Russells-viper.jpg/960px-Russells-viper.jpg'">
+      <div class="content"><span class="tag">Berbisa</span><h3>Russell’s Viper</h3><p>Memiliki tubuh tebal dengan deretan pola oval gelap yang mencolok. Bisanya berbahaya bagi manusia.</p><div class="facts"><b>Nama ilmiah:</b> <i>Daboia russelii</i><br><b>Habitat:</b> Padang rumput, semak, dan lahan pertanian di Asia.</div></div>
+    </article>
+    <article class="snake-card" data-kind="berbisa">
+      <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Crotalus_atrox.jpg?width=900" alt="Ular derik">
+      <div class="content"><span class="tag">Berbisa</span><h3>Ular Derik</h3><p>Memiliki ruas kerincing di ujung ekor yang dapat mengeluarkan suara saat digetarkan.</p><div class="facts"><b>Nama ilmiah:</b> <i>Crotalus</i> spp.<br><b>Habitat:</b> Beragam wilayah di Amerika, terutama daerah kering.</div></div>
+    </article>
+    <article class="snake-card" data-kind="tidak berbisa">
+      <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/RETICULATED_PYTHON.jpg?width=900" alt="Ular sanca batik">
+      <div class="content"><span class="tag">Tidak berbisa</span><h3>Sanca Batik</h3><p>Salah satu ular terpanjang di dunia. Membunuh mangsa dengan lilitan, bukan bisa.</p><div class="facts"><b>Nama ilmiah:</b> <i>Malayopython reticulatus</i><br><b>Habitat:</b> Hutan, rawa, dan dekat perairan di Asia Tenggara.</div></div>
+    </article>
+    <article class="snake-card" data-kind="tidak berbisa">
+      <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Boa_constrictor.jpg?width=900" alt="Boa constrictor">
+      <div class="content"><span class="tag">Tidak berbisa</span><h3>Boa Constrictor</h3><p>Ular bertubuh kekar yang menangkap mangsa dengan cara melilit.</p><div class="facts"><b>Nama ilmiah:</b> <i>Boa constrictor</i><br><b>Habitat:</b> Hutan tropis dan wilayah berhutan di Amerika Tengah serta Selatan.</div></div>
+    </article>
+    <article class="snake-card" data-kind="tidak berbisa">
+      <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Pantherophis_guttatus.jpg?width=900" alt="Ular jagung">
+      <div class="content"><span class="tag">Tidak berbisa</span><h3>Ular Jagung</h3><p>Ular ramping dengan corak jingga kemerahan. Sering ditemukan di sekitar ladang dan hutan terbuka.</p><div class="facts"><b>Nama ilmiah:</b> <i>Pantherophis guttatus</i><br><b>Habitat:</b> Amerika Serikat bagian tenggara.</div></div>
+    </article>
+    <article class="snake-card" data-kind="tidak berbisa">
+      <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Morelia-viridis-baumpython.jpg?width=900" alt="Sanca pohon hijau">
+      <div class="content"><span class="tag">Tidak berbisa</span><h3>Sanca Pohon Hijau</h3><p>Berwarna hijau cerah saat dewasa dan sering melingkar di dahan pohon.</p><div class="facts"><b>Nama ilmiah:</b> <i>Morelia viridis</i><br><b>Habitat:</b> Hutan hujan Papua, Indonesia bagian timur, dan Australia.</div></div>
+    </article>
+    <article class="snake-card" data-kind="berbisa">
+      <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bungar_candi_120608-0338_krw.jpg?width=900" alt="Ular weling">
+      <div class="content"><span class="tag">Berbisa</span><h3>Weling</h3><p>Ular belang hitam-putih yang aktif pada malam hari. Termasuk ular berbisa tinggi.</p><div class="facts"><b>Nama ilmiah:</b> <i>Bungarus candidus</i><br><b>Habitat:</b> Asia Tenggara, termasuk Indonesia.</div></div>
+    </article>
+  </section>
+  <section class="note" id="fakta">
+    <h3>🐍 Fakta menarik tentang ular</h3>
+    <p>Ular tidak memiliki kaki, bergerak dengan bantuan otot dan sisik perut, serta mencium bau dengan bantuan lidah bercabang dan organ khusus di langit-langit mulut. Ular juga berperan mengendalikan populasi hewan kecil di alam.</p>
+  </section>
+  <section class="safety" id="keamanan">
+    <h2>Utamakan keselamatan</h2>
+    <p>Jangan menyentuh, menangkap, atau mendekati ular liar, meskipun terlihat kecil atau tidak berbahaya. Jaga jarak dan beri jalan agar ular dapat pergi.</p>
+    <p>Jika melihat ular di rumah atau lingkungan, jauhkan anak-anak dan hewan peliharaan, lalu hubungi petugas atau pawang ular yang berpengalaman. Jika terjadi gigitan, segera cari pertolongan medis darurat; jangan menyayat luka, mengisap bisa, atau memasang ikatan ketat.</p>
+    <p><strong>Ingat:</strong> Ular bukan musuh manusia. Mengamati dari jarak aman adalah cara terbaik untuk mengenalnya.</p>
+  </section>
+</main>
+<footer>© 2026 Dunia Ular · Materi edukasi untuk mengenal keanekaragaman reptil.<br>Foto: Wikimedia Commons (tautan gambar memerlukan internet).</footer>
+<script>
+const search=document.getElementById('search');
+const cards=[...document.querySelectorAll('.snake-card')];
+let filter='semua';
+function update(){const q=search.value.toLowerCase();cards.forEach(card=>{const matchText=card.innerText.toLowerCase().includes(q);const matchFilter=filter==='semua'||card.dataset.kind===filter;card.style.display=matchText&&matchFilter?'':'none';});}
+document.querySelectorAll('.snake-card img').forEach(img=>{img.addEventListener('error',()=>{img.onerror=null;img.src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450'%3E%3Crect width='800' height='450' fill='%23e8f0df'/%3E%3Ctext x='400' y='220' text-anchor='middle' font-family='Arial' font-size='30' fill='%23244b38'%3EGambar tidak tersedia%3C/text%3E%3C/svg%3E";});});
+search.addEventListener('input',update);
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelector('.filter.active').classList.remove('active');btn.classList.add('active');filter=btn.dataset.filter;update();}));
+</script>
+</body>
+</html>
